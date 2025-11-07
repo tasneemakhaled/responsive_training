@@ -1,29 +1,19 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:responsive_training/screens/layout_builder_example.dart';
+import 'package:responsive_training/screens/media_query_example.dart';
 
 void main() {
-  runApp(const MediaQueryExample());
+  runApp(const MyApp());
 }
 
-class MediaQueryExample extends StatelessWidget {
-  const MediaQueryExample({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height;
-    log(height.toString());
-    return MaterialApp(
-      home: Scaffold(
-        body: Column(
-          children: [
-            Container(height: height * .2, width: 300, color: Colors.red),
-            Container(height: height * .2, width: 300, color: Colors.blue),
-            Container(height: height * .2, width: 300, color: Colors.green),
-          ],
-        ),
-      ),
-    );
+    return MaterialApp(home: LayoutBuilderExample());
   }
 }
 
