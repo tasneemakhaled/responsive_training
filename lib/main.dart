@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:responsive_training/screens/aspect_ratio_example.dart';
 import 'package:responsive_training/screens/expanded_example.dart';
 import 'package:responsive_training/screens/fitted_box_example.dart';
 import 'package:responsive_training/screens/flexible_example.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: FittedBoxExample());
+    return MaterialApp(home: AspectRatioExample());
   }
 }
 

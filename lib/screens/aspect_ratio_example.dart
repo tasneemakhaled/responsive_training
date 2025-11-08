@@ -5,6 +5,19 @@ class AspectRatioExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          AspectRatio(
+            aspectRatio: 3 / 1, // النسبة بين الطول والعرض width/height
+            child: Container(
+              color: Colors.red,
+              width: MediaQuery.of(context).size.width,
+              height: 100,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
