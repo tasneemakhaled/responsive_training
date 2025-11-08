@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:responsive_training/screens/expanded_example.dart';
+import 'package:responsive_training/screens/flexible_example.dart';
 import 'package:responsive_training/screens/layout_builder_example.dart';
 import 'package:responsive_training/screens/media_query_example.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ExpandedExample());
+    return MaterialApp(home: FlexibleExample());
   }
 }
 
