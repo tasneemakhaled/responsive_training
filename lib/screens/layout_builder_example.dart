@@ -11,7 +11,7 @@ class LayoutBuilderExample extends StatelessWidget {
       body: LayoutBuilder(
         builder: (context, constraints) {
           log(constraints.maxWidth.toString());
-          if (constraints.maxWidth <= 500) {
+          if (constraints.maxWidth <= 500) { // break point
             return MobileLayout();
           }
           // } else if (constraints.maxWidth > 500 &&
